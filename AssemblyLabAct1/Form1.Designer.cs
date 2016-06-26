@@ -147,6 +147,7 @@
             this.btnClear.Text = "Clear";
             this.btnClear.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnClear.UseVisualStyleBackColor = false;
+            this.btnClear.Click += new System.EventHandler(this.btnClear_Click);
             // 
             // btnHelp
             // 
@@ -165,6 +166,7 @@
             this.btnHelp.Text = "Help";
             this.btnHelp.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnHelp.UseVisualStyleBackColor = false;
+            this.btnHelp.Click += new System.EventHandler(this.btnHelp_Click);
             // 
             // btnAbout
             // 
@@ -183,6 +185,7 @@
             this.btnAbout.Text = "About";
             this.btnAbout.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnAbout.UseVisualStyleBackColor = false;
+            this.btnAbout.Click += new System.EventHandler(this.btnAbout_Click);
             // 
             // rtxtBody
             // 
@@ -190,7 +193,7 @@
             this.rtxtBody.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.rtxtBody.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.rtxtBody.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.rtxtBody.Location = new System.Drawing.Point(15, 223);
+            this.rtxtBody.Location = new System.Drawing.Point(15, 224);
             this.rtxtBody.Name = "rtxtBody";
             this.rtxtBody.ReadOnly = true;
             this.rtxtBody.Size = new System.Drawing.Size(354, 323);
@@ -203,7 +206,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.ClientSize = new System.Drawing.Size(384, 561);
+            this.ClientSize = new System.Drawing.Size(384, 562);
             this.Controls.Add(this.rtxtBody);
             this.Controls.Add(this.btnAbout);
             this.Controls.Add(this.btnHelp);

@@ -114,7 +114,7 @@ namespace AssemblyLabAct1
                 switch (instructionList[curr].getIns3())
                 {
                     case "00":
-                        wIns3 = "the first price.";
+                        wIns3 = "the first prize.";
                         break;
                     case "01":
                         wIns3 = "his brand new cellphone.";
@@ -169,6 +169,27 @@ namespace AssemblyLabAct1
                     // End
                 case "11":
                     break;
+            }
+
+            rtxtBody.AppendText(Environment.NewLine + "sdufhsdkfhnsdkfdf");
+        }
+
+        private void btnHelp_Click(object sender, EventArgs e)
+        {
+            Form2 frm = new Form2();
+            frm.Show();
+        }
+
+        private void btnAbout_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show(this, "This Program was written in C# Programming Language. \nProgrammers: \n\tRandolph Agbayani \n\tHenry Macugay", "About the Program", MessageBoxButtons.OK, MessageBoxIcon.Information);
+        }
+
+        private void btnClear_Click(object sender, EventArgs e)
+        {
+            DialogResult result = MessageBox.Show(this, "Clear Text Field?", "Clear", MessageBoxButtons.YesNo, MessageBoxIcon.Warning);
+            if(result == DialogResult.Yes) {
+                rtxtBody.Text = "";
             }
         }
     }
