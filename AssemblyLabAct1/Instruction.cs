@@ -14,6 +14,7 @@ namespace AssemblyLabAct1
         private String Ins4;
         private String OneInstruction;
 
+        // Storing values into a list
         public Instruction(String Ins1, String Ins2, String Ins3, String Ins4, String OneInstruction) {
             this.Ins1 = Ins1;
             this.Ins2 = Ins2;
@@ -22,22 +23,27 @@ namespace AssemblyLabAct1
             this.OneInstruction = OneInstruction;
         }
 
+        // Return first instruction (binary)
         public String getIns1() {
             return Ins1;
         }
 
+        // Return second instruction (binary)
         public String getIns2() {
             return Ins2;
         }
 
+        // Return third instruction (binary)
         public String getIns3() {
             return Ins3;
         }
 
+        // Return fourth instruction (binary)
         public String getIns4() {
             return Ins4;
         }
 
+        // Rerurn one line instruction (binary)
         public String getOneInstruction() {
             return OneInstruction;
         }
